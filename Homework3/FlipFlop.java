@@ -1,33 +1,28 @@
-/*
-Introduccion a la computacion y programacion 1 seccion B
-Laboratorio, algoritmos en java
+public class FlipFlop {
 
-Complete el algoritmo:
-
-Se ingresara un numero, el programa debe iterar desde cero hasta ese numero y mostrar el mensaje
-Flip si el numero es divisible dentro de 3
-Flop si el numero es divisible dentro de 5
-FlipFlop si el numero es divisible dentro de 3 y 5
-y si no cumple ninguna de estas condiciones, solo mostrar el valor de ese numero.
-*/
-
-public class FlipFlop {   
-
-   public static void main(String[] args) {
-   		int numeroActual = 0;
-   		System.out.println(args[0]);
-
-   		// si el numero es divisible dentro de 3 imprima "Flip"
-			System.out.println("Flip");
-
-   		// si el numero es divisible dentro de 5 imprima "Flop"
-			System.out.println("Flop");
-
-   		// si el numero es divisible dentro de 3 y 5 imprima "FlipFlop"
-			System.out.println("FlipFlop");
-
-   		// de lo contrario, imprima el numero
-      		System.out.println(numeroActual);
-   }
-
-}
+ 
+    public static void main(String[] args) {
+  	
+    int x = Integer.parseInt(args[0].toString());
+      
+        for (int contador = 0;contador <=x;contador++) {
+        if(contador%3==0 && contador%5==0)
+        {
+            System.out.print("FlipFlop ");
+        }
+        else if(contador%3==0)
+        {
+            System.out.print("Flip ");
+        }
+        else if(contador%5==0)
+        {
+            System.out.print("Flop ");
+        }
+        else
+        {
+            System.out.print(contador+" ");
+        }
+   
+        }
+    }
+    }
